@@ -6,11 +6,12 @@ module draw_side() {
         polygon([
             [4,0],
             [10.25, 0],
-            [14.25, 4],
-            [14.25, 15],
-            [11.25, 18],
-            [10, 18],
-            [10, 28.5],
+            [14.75, 4],
+            [14.75, 16],
+            [13.25, 18],
+            [11.5, 18],
+            [11.5, 26.5],
+            [9.5, 28.5],
             [4, 28.5],
             [0, 24.5],
             [0, 4]
@@ -30,15 +31,15 @@ difference() {
         cylinder(h=40 + 5.75*2, r=4, $fn=15, center=false);
     }
     
-    translate([-.5, 24.75, 7.05])
+    translate([-.5, 24.2, 7.05])
     rotate([0, 90, 0])
-    cylinder(h=40 + 5.75*2 + 1, r=1.45, $fn=30, center=false);
+    cylinder(h=40 + 5.75*2 + 1, r=1.5, $fn=30, center=false);
         
-    translate([-1, 24.75, 7.05])
+    translate([-1, 24.2, 7.05])
     rotate([0, 90, 0])
-    cylinder(h=3, r=2.3, $fn=30, center=false);
+    cylinder(h=3, r=3, $fn=30, center=false);
         
-    translate([40 + 5.75*2 - 2, 24.75, 7.05])
+    translate([40 + 5.75*2 - 2, 24.2, 7.05])
     rotate([0, 90, 0])
-    cylinder(h=3, r=2.3, $fn=30, center=false);
+    cylinder(h=3, r=3, $fn=30, center=false);
 }
